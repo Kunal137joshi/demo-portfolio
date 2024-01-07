@@ -14,11 +14,11 @@ li {
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 24px;
     align-items: center;
     left: 143px;
     color: #6070FF;
-    padding: 0.9rem;
+    padding: 1rem;
     background-color: white;
 }
 
@@ -34,11 +34,14 @@ li {
     background-image: url(Header\ bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    font-size: 22px;
+    font-size: 32px;
     border-bottom-left-radius: 5rem;
-    padding: 0 10rem;
-    height: 85vh;
+    padding: 26rem 8rem;
+    max-height: 800px;
+    min-height: 550px;
     justify-content: center;
+    gap: 2rem;
+    line-height: 44px;
     background-color: white;
 }
 
@@ -62,8 +65,9 @@ li {
 
 .icons p {
     color: #7F8CFF;
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 20px;
+    margin-bottom: -20px ;
 }
 
 .icons img {
@@ -73,30 +77,40 @@ li {
 .project-section{
     display: flex;
     flex-direction: column;
-    padding: 8rem 6rem;
+    padding: 7rem 1.5rem;
     align-items: center;
-    gap: 2rem;
+    gap: 9rem;
+    line-height: 52px;
+    font-size: 22px;
 }
 .cards{
     display: flex;
     background-color: white;
-    gap: 1rem;
-    padding: 2rem 10px;
+    gap: 1.5rem;
+    padding: 1.5rem;
     border-radius: 10px;
     justify-content: center;
 }
 
 .cards img {
-    width: 300px;
+    width: 50%;
 }
 .cards-contain{
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     gap: 2rem;
+    font-size: 22px;
 }
 .cards-contain h2{
     margin-top: 10px;
+}
+.cards-contain ul{
+    font-size: 15px;
+}
+.project-section h2{
+    font-size: 48px;
+    
 }
 .project-section ul{
     display: flex;
@@ -107,6 +121,131 @@ li {
     list-style-type: circle;
     color: rgb(86, 72, 72);
 }
-.cards:last-child p{
-width: 60%;
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background-color: white;
+    padding: 100px 170px;
+    align-items: center;    
+}
+.about-section{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 12px;
+
+
+}
+.about-section li{
+    list-style-type: none;
+}
+.about-section button{
+        padding: 11px 16px;
+        width: 35%;
+        font-size: 22px;
+        border-radius: 8px;
+        color: cornflowerblue;
+        background-color: white;
+    
+}
+.about-section ul{
+    display: flex;
+    gap: 10px;
+}
+
+.language-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    align-self: start;
+    font-size: 32px;
+    color: darkslategrey;
+}
+.java-section{
+    display: flex;
+    gap: 20px;
+}
+.java-section li{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 246, 249);
+    padding: 1rem 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+.contact-section{
+    background-image: url(./Header\ bg.svg);
+    height: 80vh;
+    background-color: rgb(39, 88, 137);
+    border-top-left-radius: 5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.last-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    font-size: 22px;
+}
+.me-section{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 65px 12rem;
+    gap: 2rem;
+    height: 80vh;
+    justify-content: center;
+}
+.me-section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 2rem;
+    color: grey;
+    width: 20rem;
+}
+.me-section li{
+    background-color: white;
+    
+}
+.me-section p{
+    text-align: center;
+}
+.me-section :nth-child(3){
+    align-items: start;
+}
+.me-section h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+form button{
+    margin: 0 auto;
+    padding: 14px 22px;
+    border-radius: 6px;
+    color: #6070FF;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+form input,
+form textarea {
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 22px;
+    width: 100%;
 }
