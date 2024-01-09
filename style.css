@@ -16,10 +16,14 @@ li {
     justify-content: space-between;
     font-size: 24px;
     align-items: center;
-    left: 143px;
     color: #6070FF;
     padding: 1rem;
     background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 1px 10px;
 }
 
 .navbar-container ul {
@@ -122,11 +126,11 @@ li {
     color: rgb(86, 72, 72);
 }
 .about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     gap: 2rem;
     background-color: white;
-    padding: 100px 170px;
+    padding: 132px 2rem;
     align-items: center;    
 }
 .about-section{
@@ -134,6 +138,8 @@ li {
     flex-direction: column;
     background-color: white;
     gap: 12px;
+    min-width: 300px;
+    max-width: 500px;
 
 
 }
@@ -141,8 +147,8 @@ li {
     list-style-type: none;
 }
 .about-section button{
-        padding: 11px 16px;
-        width: 35%;
+        padding: 9px 10px;
+        width: 186px;
         font-size: 22px;
         border-radius: 8px;
         color: cornflowerblue;
@@ -160,7 +166,6 @@ li {
     gap: 1rem;
     background-color: white;
     align-self: start;
-    font-size: 32px;
     color: darkslategrey;
 }
 .java-section{
@@ -179,7 +184,7 @@ li {
     background-image: url(./Header\ bg.svg);
     height: 80vh;
     background-color: rgb(39, 88, 137);
-    border-top-left-radius: 5rem;
+    border-top-left-radius: 15rem;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -248,4 +253,10 @@ form textarea {
     border-radius: 5px;
     font-size: 22px;
     width: 100%;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+
 }
