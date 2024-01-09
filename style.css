@@ -25,6 +25,19 @@ li {
     right: 0;
     box-shadow: 1px 1px 10px;
 }
+.navbar-container hr{
+    margin-bottom: 2px;
+    border-radius: 10px;
+    height: 4px;
+    width: 35px;
+    background-color: #6070FF;
+   
+}
+
+.hamburger{
+    display: none;
+}
+
 
 .navbar-container ul {
     display: flex;
@@ -99,6 +112,7 @@ li {
 .cards img {
     width: 50%;
 }
+
 .cards-contain{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -106,25 +120,31 @@ li {
     gap: 2rem;
     font-size: 22px;
 }
+
 .cards-contain h2{
     margin-top: 10px;
 }
+
 .cards-contain ul{
     font-size: 15px;
 }
+
 .project-section h2{
     font-size: 48px;
     
 }
+
 .project-section ul{
     display: flex;
     align-items: center;
     gap: 2rem;
 }
+
 .project-section li{
     list-style-type: circle;
     color: rgb(86, 72, 72);
 }
+
 .about{
     display: flex;
     justify-content: center;
@@ -133,6 +153,7 @@ li {
     padding: 132px 2rem;
     align-items: center;    
 }
+
 .about-section{
     display: flex;
     flex-direction: column;
@@ -168,10 +189,12 @@ li {
     align-self: start;
     color: darkslategrey;
 }
+
 .java-section{
     display: flex;
     gap: 20px;
 }
+
 .java-section li{
     display: flex;
     flex-direction: column;
@@ -182,12 +205,12 @@ li {
 }
 .contact-section{
     background-image: url(./Header\ bg.svg);
-    height: 80vh;
     background-color: rgb(39, 88, 137);
     border-top-left-radius: 15rem;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
+
 .last-section{
     display: flex;
     flex-direction: column;
@@ -195,16 +218,17 @@ li {
     background-color: white;
     font-size: 22px;
 }
+
 .me-section{
     display: flex;
     flex-direction: column;
     color: white;
     align-items: center;
-    padding: 65px 12rem;
+    padding: 60px 12rem;
     gap: 2rem;
-    height: 80vh;
     justify-content: center;
 }
+
 .me-section ul{
     display: flex;
     flex-direction: column;
@@ -213,16 +237,25 @@ li {
     color: grey;
     width: 20rem;
 }
+
 .me-section li{
     background-color: white;
     
 }
+
 .me-section p{
     text-align: center;
+    max-width: 550px;
+    font-size: 24px;
 }
+
 .me-section :nth-child(3){
     align-items: start;
 }
+.me-section :nth-child(1){
+    font-size: 32px;
+}
+
 .me-section h2{
     font-size: 35px;
     font-weight: 700;
@@ -234,11 +267,12 @@ form{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 80%;
+    max-width: 400px;
 }
+
 form button{
     margin: 0 auto;
-    padding: 14px 22px;
+    padding: 9px 15px;
     border-radius: 6px;
     color: #6070FF;
     border: none;
@@ -251,12 +285,56 @@ form input,
 form textarea {
     padding: 8px;
     border-radius: 5px;
-    font-size: 22px;
     width: 100%;
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
 
+    .navbar-container ul{
+        display: none;
+    }
 
+    .about{
+        flex-direction: column
+    }
+    .java-section{
+        flex-direction: column;
+    }
+    .language-section{
+        width: 100%;
+    }
+    .java-section li{
+        flex-direction: row;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .cards img{
+        width: 300px;
+    }
+    .project-section ul{
+
+        align-items: normal;
+    }
+    
+    .project-section{
+        line-height: normal;
+    }
+    .me-section{
+        padding: 4rem 2rem;
+        gap: 1rem 
+    }
+    .first-section{
+        padding: 32rem 1rem;
+    }
+    .contact-section{
+        border-top-left-radius: 8rem 
+    }
+    form button{
+        font-weight: normal;
+    }
 }
