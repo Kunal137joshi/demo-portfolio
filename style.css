@@ -252,9 +252,6 @@ li {
 .me-section :nth-child(3){
     align-items: start;
 }
-.me-section :nth-child(1){
-    font-size: 32px;
-}
 
 .me-section h2{
     font-size: 35px;
@@ -314,7 +311,7 @@ form textarea {
         flex-direction: column;
     }
     .cards img{
-        width: 300px;
+        width: 278px;
     }
     .project-section ul{
 
@@ -329,7 +326,17 @@ form textarea {
         gap: 1rem 
     }
     .first-section{
-        padding: 32rem 1rem;
+        padding: 6rem 1rem;
+        line-height: normal;
+        font-size: 16px;
+    }
+    .first-section h1{
+        font-size: 32px;
+    }
+    .icons p{
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 16px;
     }
     .contact-section{
         border-top-left-radius: 8rem 
@@ -337,4 +344,5 @@ form textarea {
     form button{
         font-weight: normal;
     }
+    
 }
